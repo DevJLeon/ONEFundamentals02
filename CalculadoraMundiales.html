@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>Calculadora Mundiales Fuchibol</h1>
+
+<script>
+    function saltarLinea () {
+        document.write("<br>");
+    };
+    
+    function mostrar (contenido) {
+        document.write(contenido);
+        saltarLinea();
+    };
+
+    var primerMundial = 1930;
+    var maxYear = parseInt(prompt("Ingrese el año a calcular los mundiales"));
+
+    while (primerMundial <= maxYear ) {
+        mostrar(primerMundial)
+        primerMundial += 4
+    };
+
+    mostrar("Fin")
+
+
+</script>

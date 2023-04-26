@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+    var usuario = "alura";
+    var password = "alura321";
+    var intentosMaximos = 3;
+    var intentos = 1;
+
+
+    while (intentos <= intentosMaximos) {
+        var usuarioIngresado = prompt("Ingrese su usuario");
+        var passwordIngresada = prompt("Ingrese su contraseña");
+
+        if( usuario == usuarioIngresado && password == passwordIngresada ) {
+            alert("Bienvenido al sistema " + usuarioIngresado);
+            break
+        } else if (intentos<intentosMaximos) {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+            intentos ++
+        }
+}
+</script>

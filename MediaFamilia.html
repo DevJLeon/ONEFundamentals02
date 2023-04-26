@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>Calculadora Media de los miemros de la familia</h1>
+
+<script>
+    function saltarLinea () {
+        document.write("<br>");
+    };
+    
+    function mostrar (contenido) {
+        document.write(contenido);
+        saltarLinea();
+    };
+    mostrar("FOR")
+    var totalFor = 0;
+    var cantidadIntegrantes = parseInt(prompt("Ingrese la cantidad de miembros de la familia"));
+
+    for (var integrantes = 1; integrantes <= cantidadIntegrantes; integrantes ++ ) {
+        var edadIntegrantes = parseInt(prompt("Ingrese la edad del integrante " + integrantes))
+        totalFor +=edadIntegrantes
+    };
+
+    mostrar("la media de todos los integrantes de la familia es " + (totalFor/cantidadIntegrantes))
+
+    mostrar("WHILE")
+    var integrante = 1
+    var totalWhile = 0
+
+    while (integrante <= cantidadIntegrantes){
+      var edadIntegrante = parseInt(prompt("Ingrese la edad del integrante " + integrante))
+      totalWhile += edadIntegrante;
+      integrante += 1  
+    };
+    
+    mostrar("la media de todos los integrantes de la familia es " + (totalWhile/cantidadIntegrantes))
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<h1>Numeros Pares 1-100 ciclo WHILE</h1>
+
+<script>
+    function saltarLinea () {
+        document.write("<br>");
+    };
+    
+    function mostrar (contenido) {
+        document.write(contenido);
+        saltarLinea();
+    };
+
+    var numero = 1
+    
+    while (numero <= 100){
+
+        if (numero%2 == 0){
+            mostrar(numero)
+        };
+        numero ++
+    };
+
+</script>
